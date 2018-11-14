@@ -10,10 +10,18 @@ public class Main {
     public static void bubbleSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length-1; j++) {
-                if (arr[j] > arr[i+1]) {
+                if (arr[j] > arr[i]) {
                     swap(arr, j, j+1);
                 }
             }
         }
+    }
+
+    public static void print(int[] arr) {
+        String str = "";
+        for (int i = 0; i < arr.length; i++) {
+            str = str + arr[i] + " ";
+        }
+        System.out.println(str);
     }
 }
