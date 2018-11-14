@@ -27,7 +27,11 @@ public class Main {
     public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length-1; j++) {
-                if (arr[i])
+                if (arr[i] < arr[j])
+                    break;
+                else {
+
+                }
             }
         }
     }
