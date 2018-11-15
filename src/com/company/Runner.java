@@ -8,5 +8,7 @@ public class Runner {
         Main.print(something);
         Main.selectionSort(something);
         Main.print(something);
+        Main.insertSort(something);
+        Main.print(something);
     }
 }

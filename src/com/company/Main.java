@@ -38,8 +38,19 @@ public class Main {
     }
 
     public static void insertSort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int marker = arr[i];
+            int j = i-1;
 
+            while (j>=0 && arr[j] > marker)
+            {
+                arr[j+1] = arr[j];
+                j = j-1;
+            }
+            arr[j+1] = marker;
+        }
     }
+
     public static void print(int[] arr) {
         String str = "";
         for (int i = 0; i < arr.length; i++) {
