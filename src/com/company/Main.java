@@ -8,15 +8,18 @@ public class Main {
     }
 
     public static void bubbleSort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length-1; j++) {
-                if (arr[j] > arr[i]) {
-                    swap(arr, j, j+1);
-                }
-            }
-        }
+        int swaps = 1;
+         while (swaps!=0) {
+             swaps = 0;
+             for (int i = 0; i < arr.length-1; i++) {
+                 if (arr[i] > arr[i+1]) {
+                     swap(arr, i, i+1);
+                     swaps++;
+                 }
+             }
+         }
     }
-    public int[] randInt(int count) {
+    public static int[] randInt(int count) {
         int[] arr = new int[count];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int)(Math.random()*10000);
