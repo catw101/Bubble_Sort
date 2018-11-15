@@ -19,6 +19,7 @@ public class Main {
              }
          }
     }
+
     public static int[] randInt(int count) {
         int[] arr = new int[count];
         for (int i = 0; i < arr.length; i++) {
@@ -36,6 +37,9 @@ public class Main {
         }
     }
 
+    public static void insertSort(int[] arr) {
+
+    }
     public static void print(int[] arr) {
         String str = "";
         for (int i = 0; i < arr.length; i++) {
